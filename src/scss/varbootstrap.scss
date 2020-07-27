@@ -1,0 +1,28 @@
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+	xl: 1600px,
+	xxl: 2000px,
+	3xl: 2500px,
+	4xl: 3000px,
+	5xl: 3500px,
+	6xl: 4000px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1540px
+);
+
+//@import "../../node_modules/bootstrap/scss/variables";
+/*
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+*/
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap-vue/src/index.scss';
+

@@ -1,0 +1,13 @@
+Options Indexes FollowSymLinks
+RewriteEngine On
+
+# по умолчанию - все направляем на actions/AppPage:
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}/index.html !-f
+RewriteCond %{REQUEST_URI}	!^\/api\/		[NC]
+RewriteCond %{REQUEST_URI}	!^\/i\/		[NC]
+RewriteCond %{REQUEST_URI}	!^\/css\/		[NC]
+RewriteCond %{REQUEST_URI}	!^\/js\/		[NC]
+#RewriteRule	^.*$	/E7.php?a=AppPage	[QSA,L]
+RewriteRule	^.*$	/index.html				[QSA,L]

@@ -1,0 +1,83 @@
+.route {
+	&-leave-active {
+		transition:  .5s;
+
+		&::after {
+			display: block;
+			content: "";
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: #0045A0;
+			z-index: 9;
+			animation: bg_anim .5s ease-out;
+		}
+	}
+	&-enter-active {
+		transition:  .8s;
+
+		&::after {
+			display: block;
+			content: "";
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: #0045A0;
+			z-index: 9;
+			animation: bg_opacity .8s ease-out;
+			opacity: 0;
+		}
+	}
+	&-enter, &-leave-to{
+		//opacity: 0;
+	}
+}
+
+.goto(toHome;{
+	background: #c0e6fd;
+});
+.goto(toService;{
+	background: #0045A0;
+});
+.goto(toServices;{
+	background: #0045A0;
+});
+.goto(toFleet;{
+	background: #0045A0;
+});
+.goto(toAbout;{
+	background: #0045A0;
+});
+.goto(toNews;{
+	background: #0045A0;
+});
+.goto(toGallery;{
+	background: #0045A0;
+});
+.goto(toContacts;{
+	background: #0045A0;
+});
+
+@keyframes bg_anim {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes bg_opacity {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

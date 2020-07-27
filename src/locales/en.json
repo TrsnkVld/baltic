@@ -1,0 +1,67 @@
+{
+    "map": {
+        "city": "St. Petersburg",
+        "describe": "Operational headquarters",
+        "activity": "Activity geography"
+    },
+    "homePage": {
+        "newsBtnText": "News archive",
+        "newsTitle": "News",
+        "partners": "Our partners",
+        "title": "Shipments of cargoes by specialized reefer-ships and in containers",
+        "about": {
+            "title": "Baltic Shipping",
+            "describe": [
+                "Founded in 1999, Baltic Shipping has become one of the leading operator of specialized reefer-ships.We are to provide year-round shipments of various perishable cargoes all over the world"
+            ],
+            "list": [
+                {
+                    "text": "Fruits",
+                    "img": "icons/fruits.svg"
+                },
+                {
+                    "text": "Vegetables",
+                    "img": "icons/veggies.svg"
+                },
+                {
+                    "text": "Automotive",
+                    "img": "icons/car.svg"
+                }
+            ]
+        },
+
+        "whyChooseUs": {
+            "title": "Why choose us?",
+            "list": [
+                {
+                    "text": "High skillness and expiriance in shipping",
+                    "img": "icons/person.svg"
+                },
+                {
+                    "text": "Strategic relationships with ship owners and charterers",
+                    "img": "icons/handshake.svg"
+                },
+                {
+                    "text": "Availability of different cargo capacity vessels under the Company operation",
+                    "img": "icons/ship.svg"
+                },
+                {
+                    "text": "Prompt ships chartering and brokerage",
+                    "img": "icons/lifebuoy.svg"
+                },
+                {
+                    "text": "Long-term contracts with leading fruit and vegetables importers and exporters",
+                    "img": "icons/blank.svg"
+                },
+                {
+                    "text": "24-hour Agency service",
+                    "img": "icons/24_hours.svg"
+                },
+                {
+                    "text": "Attentive attitude towards our clients",
+                    "img": "icons/attentive_attitude.svg"
+                }
+            ]
+        }
+    }
+}

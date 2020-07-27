@@ -1,0 +1,62 @@
+// ЦВЕТА
+@white: #ffffff;
+@black: #333B45;
+@active: #0045A0;
+@softblue: #e6edf6;
+
+@btnHover:#0062CC;
+@btnActive: #004A99;
+@disabled: #ADB5BD;
+
+@navyBlue: #002250;
+
+@colorDark: #003775;
+@colorDarkBg: #0045A0;
+@underline: #CCCED0;
+@tableColor: #00347A;
+@tableFirstRow: fade(@tableColor, 75%);
+@tableSecondRow: fade(@tableColor, 25%);
+
+// MEDIA
+@xs: 0px;
+@sm: 576px;
+@md: 768px;
+@lg: 992px;
+@xl: 1600px;
+@1782: 1782px;
+@xxl: 2000px;
+@3xl: 2500px;
+@4xl: 3000px;
+@5xl: 3500px;
+@6xl: 4000px;
+@menu: 1400px;
+
+// MiXINS
+.up( @value, @rules ) {
+    @media only screen and (min-width: @value) {
+        @rules();
+    }
+}
+
+.upLand( @value, @rules ) {
+    @media only screen and (min-width: @value) and (orientation: landscape) {
+        @rules();
+    }
+}
+
+.down( @value, @rules ) {
+    @media only screen and (max-width: @value - 1) {
+        @rules();
+    }
+}
+
+.goto(@value, @rules) {
+	.@{value} {
+		.route-enter-active,
+		.route-leave-active {
+			&::after {
+				@rules();
+			}
+		}
+	}
+}
